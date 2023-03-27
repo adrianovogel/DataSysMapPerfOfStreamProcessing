@@ -1,0 +1,33 @@
+Work,Applications domain,Applications/suites used,Metrics,Systems/frameworks,Challenges identified
+,,,,SPC,
+\cite{Chauhan2012},Text proc.,,"Scalability, resources usage, fault tolerance",Yahoo! S4,The throughput and resources relation may not be linear
+\cite{Lu2014},Text proc. and numeric,StreamBench,"Throughput, latency, fault tolerance","Spark Streaming, Storm",Spark better in throughput and under failures w.r.t. Storm. Storm can be better in latency
+\cite{Milan2016},Flow data analysis,Security analysis,Throughput,"Samza, Spark, Storm",Samza and Spark achieved high throughput
+\cite{Lopez2016},Network,Threat detection,"Throughput, fault tolerance","Flink, Spark Streaming, Storm","Storm with the best throughput, Spark streaming wins in fault recovery"
+\cite{Qian2016},Text proc. and network,StreamBench,"Throughput, latency, fault tolerance","Spark Streaming, Storm, Samza",Spark and Storm can be optimized for performance gains. Spark wins in throughput and storm on latency
+\cite{Chintapalli2016},Analytics pipeline,Advertisement,"Throughput, latency","Storm, Flink and Spark Streaming",Flink and Storm with similar performance. Spark Streaming with much higher latency and higher throughput (in batches)
+\cite{Venkataraman2017},analytics,"Advertisement, video","Throughput, latency","Spark, Flink",SPark's scheduling can be optimized to improve latency and throuhput
+\cite{Dayarathna2017},Urban traffic,Linear road,Energy consumption,"S4, Storm, ActiveMQ, Esper, Kafka, and Spark Streaming","S4, Esper, and Spark Streaming environments had highest average energy consumption efficiencies"
+\cite{Zhang2017},Many domains,7 benchmarks,"Throughput, latency","Storm, Flink",JVM based SPEs lack in efficiency to utilize modern hardware
+\cite{Shukla2017},IoT,4 application benchmarks (RIoTBench),"Throughput, latency, resources",Storm,A benchmark is proposed that can help in evaluating Stom or real-time processing
+\cite{Zeuch2019},Many domains,"YSB, LRB, NYC Taxi","Throughput, latency, resources","Flink, Spark, Storm, Streambox, Saber",The existing SPEs fail to exploit the hardware's computational resources.
+\cite{Karimov2018},Online games,Derived from Rovio,"Throughput, latency, resources","Flink, Spark, Storm",The performance may vary on SPEs. In general Flinks has the best throughput.
+\cite{Shahverdi2019},Advertisement,YSB,"Throughput, latency, resources","Apache Storm, Apache Flink, Apache Spark, Kafka Streams, Hazelcast Jet",Flink is better for low latency. Kafka streams and Hazelcast Jet provide the best resource management. Storm achive a high throughput under low input rates.
+\cite{Hesse2019},Text proc,StreamBench queries,Execution time,"Apex, Flink, Spark Streaming, Apache Beam",The abstraction provided by Apache beam has a significant impact on performance
+\cite{Zhang2019},Many domains,"WC, FD, SD, LRB","Throughput, latency, resources","BriskStream, Storm, Flink, StreamBox","BrikStream (being proposed) outperformed the state-of-the-art solutions, that are not efficient in NUMA machines"
+\cite{Venugopal2020},Advertisement,"SWA, YSB","Throughput, latency","AIR, Spark, Flink, StreamBox, PiCo, Saber",The existing SPEs fail do not scale well. Spark  loses  performances when  graph topologies are complex
+\cite{Pagliari2020},Micro-benchmark,"Synthetics, YSB","Throughput, latency","Flink, Storm",Flink with a slightly better performance
+\cite{Vikash2020},IoT,Process Flow Diagram,"Startup time, latency, throughput, jitter, scalability","NiFi, Storm, Apex, Spark, Flink",NiFi it the best framework for real-time IoT applications
+\cite{Bordin2020},"Many domains (Log-Processing, Traffic Monitoring, and Word Count)","Log-Processing, Traffic Monitoring, and Word Count","Throughput, latency, resources","Storm, Spark Streaming",Storm outperforms Spark Streaming both in latency and throughput
+\cite{VanDongen2020},IoT,,"Throughput, latency, resources","Flink, Spark, Structured Streaming, Kafka Streams",Flink tends to be better for low latency. Structured Streaming provides the highest throughput and most efficient resources consumption. Flink reacts better to workloads with burst.
+\cite{Volnes2020},SQL queries,NEXMark,Throughput,"Flink, Beam, Esper, Siddhi, T-Rex",Flink is the best performing in most cases
+\cite{vanDongen2021a},IoT,OSPBenc,"Throughput, latency, resources","Flink, Spark, Structured Streaming, Kafka Streams","The fault recovery mechanism of Spark and Structured Streaming are fast and resilient, but may output duplicates. Flink has better correctness but is slow. Kafka Streams is effective under failures but provides the lowest application performance."
+\cite{Gencer2021},Many domains,NEXMark,"Throughput, latency",Hazelcast Jet,The proposed solution achieves scalable performance under low latency
+\cite{vanDongen2021b},IoT,OSPBenc,"Throughput, scalability, efficiency","Flink, Spark, Structured Streaming, Kafka Streams",Each framework has advantages and disadvantages for different scenarios
+\cite{Henning2021},"IoT (database storage, aggregations)",Theodolite,Scalability,"Flink, Kafka Streas",Kafka Streams and Apache Flink are scalable
+\cite{Wang2022},"Text proc, synthetic","WC, synthetics","Throughput, latency, resources, recovery","Flink, Storm",
+\cite{Karakaya2017},Advertisement,YSB (modified),Scalability and efficiency,"Flink, Spark, Storm",Spark can provide the higher throughput while Flink provides the lowest latency.
+\cite{Dayarathna2013},Many domains,Micro-benchmark and real-world apps,"Throughput, resources","System S,S4, Esper","Performance is still complex in stream processing, System S achived the highest throughput."
+\cite{Hesse2021},Manufactoring industry,ESPBench,"Latency, resources","Spark, Flink, Hazelcast Jet. All experiments use Apace Beam",Hazelcast Jet utilizes better the system and achieves lower latency. 
+\cite{Chatterjee2018},Many domains,"WC, IoT monitoring, batch processing","Throughput, resources and energy consumption, fault tolerance","Flink, Storm, Heron",Heron outperforms Flink and Storm. Flink is more efficient in terms of resources and e energy consumption. Flink was the best in terms of fault tolerance
+\cite{Nasiri2019},"Advertisement, IoT, ",YSB and RIoT,"Throughput, latency, resources, scalability","Flink, Storm, Spark Streming",Flink presents the best throughput in small clusters and does not scale well in larger clusters. Flinks achieves the best latencies
